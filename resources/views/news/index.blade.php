@@ -36,7 +36,9 @@
                         <td>{{ $new->ringkasan}}</td>
                         <td>{{ $new->penulis}}</td>
                         <td> {{ Carbon\Carbon::parse($new->tgl_post)->translatedFormat('j F Y') }}</td>
-                        <td><a href="{{ route('news.edit', [$new->id])}}" class="d-none d-sm-inline-block btn-sm btn-outline-success shadow-sm">
+                        <td><a href="/detail/{{ $new->id }}" class="d-none d-sm-inline-block btn-sm btn-outline-primary shadow-sm">
+                                <i class="fas fa-eye fa-sm text-gray-50" title="Lihat Postingan"></i>
+                            </a><a href="{{ route('news.edit', [$new->id])}}" class="d-none d-sm-inline-block btn-sm btn-outline-success shadow-sm">
                                 <i class="fas fa-edit fa-sm text-gray-50" title="Edit"></i>
                             </a>
                             <a href="/news/hapus/{{$new->id}}" onclick="return confirm('Yakin Ingin menghapus berita `{{$new->judul}}` ?')" class="d-none d-sm-inline-block btn-sm btn-outline-danger shadow-sm">
