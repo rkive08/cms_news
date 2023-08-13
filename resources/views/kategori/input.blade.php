@@ -3,7 +3,7 @@
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h4 class="m-0 font-weight-bold text-primary">Input Kategori Baru</h4>
+        <h4 class="m-0 font-weight-bold text-primary"><i class="bi bi-file-earmark-plus"></i> Input Kategori Baru</h4>
     </div>
     <div class="card-body">
         <div class="col-md-8 col-sm-12 bg-white p-4">

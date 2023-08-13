@@ -65,8 +65,8 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="http://127.0.0.1:8000/kategori"><i class="fas fa-fw fa-clipboard"></i> Kategori</a>
-                        <a class="collapse-item" href="http://127.0.0.1:8000/news"><i class="fas fa-fw fa-file"></i> Postingan</a>
+                        <a class="collapse-item" href="http://127.0.0.1:8000/kategori"><i class="fas fa-fw fa-clipboard-list"></i> Kategori</a>
+                        <a class="collapse-item" href="http://127.0.0.1:8000/news"><i class="fas fa-fw fa-list"></i> Postingan</a>
                     </div>
                 </div>
             </li>
@@ -77,7 +77,7 @@
                     <span>Cetak Berita</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/log">
                     <i class="fas fa-fw fa-key"></i>
                     <span>Log Aktivitas</span></a>
             </li>

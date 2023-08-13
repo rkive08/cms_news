@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\News;
 use App\Models\Kategori;
+use App\Models\ActivityLog;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Alert;
@@ -15,12 +16,20 @@ class NewsController extends Controller
 {
     /**
      * Display a listing of the resource.
+     * 
      */
+
     public function index()
     {
         $news = \App\Models\News::All();
         $kategori = \App\Models\Kategori::All();
         return view('news.index', ['news' => $news, 'kategori' => $kategori]);
+    }
+
+    public function log()
+    {
+        $activity_log = ActivityLog::with('user')->orderBy('id', 'DESC')->get();
+        return view('news.log', compact('activity_log'));
     }
 
     /**
@@ -54,7 +63,7 @@ class NewsController extends Controller
             'tgl_post' => $tanggal,
 
         ]);
-
+        activity()->log('Mengupload postingan baru');
         Alert::success('Berhasil', 'Berita di Upload');
         return redirect('/news');
     }
@@ -92,7 +101,7 @@ class NewsController extends Controller
             $update_news->deskripsi = $request->get('deskripsi');
             $update_news->save();
         }
-
+        activity()->log('Mengubah postingan');
         Alert::success('Update Berhasil', 'Berita telah di ubah');
         return redirect()->route('news.index');
     }
@@ -116,6 +125,7 @@ class NewsController extends Controller
         $news->delete();
         unlink(public_path() . '/images/' . $news->gambar);
 
+        activity()->log('Menghapus postingan');
         Alert::success('Di Hapus', 'Berita di hapus');
         return redirect()->route('news.index');
     }

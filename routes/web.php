@@ -32,3 +32,5 @@ Route::get('kategori/hapus/{id}', [App\Http\Controllers\KategoriController::clas
 Route::get('/', [App\Http\Controllers\PublikController::class, 'show']);
 // Route::resource('/', App\Http\Controllers\PublikController::class);
 Route::get('/detail/{id}', [App\Http\Controllers\PublikController::class, 'detail']);
+
+Route::get('/log', [App\Http\Controllers\NewsController::class, 'log']);

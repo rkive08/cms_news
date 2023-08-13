@@ -5,7 +5,7 @@
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h4 class="m-0 font-weight-bold text-primary">Kategori Berita</h4>
+        <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-clipboard-list"></i> Kategori Berita</h4>
     </div>
     <div class="card-body">
         <div>
@@ -14,14 +14,14 @@
         </div><br>
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead class="font-weight-bold text-light bg-danger" align="center">
+                <thead class="font-weight-bold text-light bg-primary" align="center">
                     <tr>
                         <th>No.</th>
                         <th>Kategori</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
-                <tbody align="center">
+                <tbody class="text-dark" align="center">
                     @foreach ($kategori as $i => $kat)
                     <tr>
                         <td>{{ ++$i }}</td>

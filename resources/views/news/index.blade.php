@@ -5,7 +5,7 @@
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h4 class="m-0 font-weight-bold text-primary">Data Postingan Berita</h4>
+        <h4 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-list"></i> Data Postingan Berita</h4>
     </div>
     <div class="card-body">
         <div>
@@ -26,7 +26,7 @@
                         <th>Aksi</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="text-dark">
                     @foreach ($news as $i => $new)
                     <tr>
                         <td>{{ ++$i }}</td>
