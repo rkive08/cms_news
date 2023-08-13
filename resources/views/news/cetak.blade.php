@@ -13,7 +13,7 @@
 
         p {
             text-align: justify;
-            padding-top: 3%;
+            padding-top: 1%;
         }
 
         i {
@@ -36,6 +36,10 @@
         <center>
             <img src="{{ public_path('/images/') . $ctk->gambar }}" width="100%" height="30%">
         </center>
+        <i>Kategori : {{$ctk->kategori}}</i><br>
+        <i>
+            <h6 style="text-align: justify;">"{{$ctk->ringkasan}}"</h6>
+        </i>
         <p>{{ $ctk->deskripsi}}</p>
     </div>
     <div class="page-break">

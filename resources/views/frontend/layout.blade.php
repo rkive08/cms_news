@@ -111,7 +111,7 @@
                                 </a>
                             </div>
                             <div class="col-auto d-none d-lg-block">
-                                <img src="{{ url('/images/'. $lain->gambar) }}" width="200" height="100">
+                                <img src="{{ url('/images/'. $lain2->gambar) }}" width="200" height="100">
                             </div>
                         </div>
                     </div>

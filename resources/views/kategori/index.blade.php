@@ -13,7 +13,7 @@
                 <i class="fas fa-plus fa-sm text-white-50"></i> Tambah </a>
         </div><br>
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
                 <thead class="font-weight-bold text-light bg-primary" align="center">
                     <tr>
                         <th>No.</th>

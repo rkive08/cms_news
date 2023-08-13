@@ -29,11 +29,11 @@
                 </div>
                 <div class="form-group">
                     <label><b>Deskripsi Singkat</b> </label>
-                    <textarea class="form-control text-dark" name="ringkasan" rows="8"></textarea>
+                    <textarea id="myeditorinstance" class="form-control text-dark" name="ringkasan" rows="8"></textarea>
                 </div>
                 <div class="form-group">
                     <label><b>Isi Berita</b> </label>
-                    <textarea class="form-control text-dark" name="deskripsi" rows="15"></textarea>
+                    <textarea id="myeditorinstance" class="form-control text-dark" name="deskripsi" rows="15"></textarea>
                 </div>
                 <div class="col-md-19" align="right">
                     <input type="Button" class="btn btn-primary btn-send" value="Kembali" onclick="history.go(-1)">

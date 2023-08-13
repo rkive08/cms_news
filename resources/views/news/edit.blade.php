@@ -38,11 +38,11 @@
                     </div>
                     <div class="form-group">
                         <label><b>Deskripsi Singkat</b> </label>
-                        <textarea class="form-control" name="ringkasan" rows="8" value="{{ $news->ringkasan }}" required>{{ $news->ringkasan }}</textarea>
+                        <textarea id="myeditorinstance" class="form-control" name="ringkasan" rows="8" value="{{ $news->ringkasan }}" required>{{ $news->ringkasan }}</textarea>
                     </div>
                     <div class="form-group">
                         <label for=""><b>Deskripsi</b> </label>
-                        <textarea class="form-control" name="deskripsi" rows="15" value="{{ $news->deskripsi }}" required>{{ $news->deskripsi }}</textarea>
+                        <textarea id="myeditorinstance" class="form-control" name="deskripsi" rows="15" value="{{ $news->deskripsi }}" required>{{ $news->deskripsi }}</textarea>
                     </div>
 
                     <br>

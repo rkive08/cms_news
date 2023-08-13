@@ -9,7 +9,7 @@
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
                 <thead class="font-weight-bold text-dark" align="center">
                     <tr>
                         <th>No.</th>
@@ -18,13 +18,13 @@
                         <th>Waktu</th>
                     </tr>
                 </thead>
-                <tbody class="text-dark" align="center">
+                <tbody class="text-dark">
                     @foreach ($activity_log as $i => $log)
                     <tr>
-                        <td>{{ ++$i }}</td>
+                        <td align="center">{{ ++$i }}</td>
                         <td>{{ $log->user->name}}</td>
                         <td>{{ $log->description}}</td>
-                        <td> {{$log->created_at}}</td>
+                        <td align="center"> {{$log->created_at}}</td>
                     </tr>
                     @endforeach
                 </tbody>
