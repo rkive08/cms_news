@@ -1,3 +1,24 @@
+# Mini Project CMS News
+
+![WhatsApp Image 2023-08-13 at 21 55 15](https://github.com/rkive08/cms_news/assets/101632624/0a9e6d35-2844-42d4-ba79-8496dab5bec9)
+
+ Berikut adalah beberapa teknologi dan framework yang digunakan dalam pengembangan Mini Project CMS News ini:
+<ul>
+    <li>Laravel versi 10</li>
+    <li>Bootstrap versi 5</li>
+    <li>MySQL</li>
+</ul>
+
+## Fitur Utama
+<ol>
+    <li>Fitur Daftar/Masuk <br>Pengguna dapat mendaftar dan masuk ke Dasboard/Aplikasi</li>
+    <li>CRUD untuk Konten Berita <br> Pengguna dapat melakukan CRUD untuk Konten Berita termasuk Gambar Berita, Kategori Berita, Judul Berita, dan Deskripsi Berita</li>
+    <li>Dapat mengekspor Data Berita ke PDF <br> Pengguna dapat mengekspor 5 berita pertama ke File PDF termasuk semua atribut pada data Berita</li>
+    <li>Log Aktivitas</li>
+</ol>
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
