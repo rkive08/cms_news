@@ -13,7 +13,7 @@
 <ol>
     <li>Fitur Daftar/Masuk <br>Pengguna dapat mendaftar dan masuk ke Dasboard/Aplikasi</li>
     <li>CRUD untuk Konten Berita <br> Pengguna dapat melakukan CRUD untuk Konten Berita termasuk Gambar Berita, Kategori Berita, Judul Berita, dan Deskripsi Berita</li>
-    <li>Dapat mengekspor Data Berita ke PDF <br> Pengguna dapat mengekspor 5 berita pertama ke File PDF termasuk semua atribut pada data Berita</li>
+    <li>Ekspor Data Berita ke PDF <br> Pengguna dapat mengekspor 5 berita pertama ke File PDF termasuk semua atribut pada data Berita</li>
     <li>Log Aktivitas</li>
 </ol>
 
