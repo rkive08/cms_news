@@ -35,6 +35,7 @@ class KategoriController extends Controller
         $tambah_kategori->kategori = $request->kategori;
         $tambah_kategori->save();
 
+        activity()->log('Menambah kategori baru');
         Alert::success('Berhasil', 'Kategori ditambahkan');
         return redirect('/kategori');
     }
@@ -71,6 +72,7 @@ class KategoriController extends Controller
         $kategori = \App\Models\Kategori::findOrFail($kategori);
         $kategori->delete();
 
+        activity()->log('Menghapus kategori');
         Alert::success('Di Hapus', 'Kategori dihapus');
         return redirect()->route('kategori.index');
     }
