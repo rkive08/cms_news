@@ -112,7 +112,7 @@ DB_PASSWORD=
 </svg>
     </clipboard-copy>
   </div></di></li>
-                <li>Mini Project CMS News siap dijalankan di lokal.Jalankan server PHP dengan perintah berikut: <br><br> <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>php artisan serve
+                <li>Mini Project CMS News siap dijalankan di lokal. Jalankan server PHP dengan perintah berikut: <br><br> <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>php artisan serve
 </code></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/bbhpowpow/myname.git" tabindex="0" role="button" style="display: inherit;">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
@@ -123,7 +123,17 @@ DB_PASSWORD=
 </svg>
     </clipboard-copy>
   </div></di></li>
+                    <li>Import file <b>cms_news.sql</b> yang terdapat pada folder cms_news ke database untuk memasukan data sample ke project </li>
 </ol>
+<br>
+Setelah langkah-langkah diatas selesai, buka browser web dengan alamat http://127.0.0.1:8000 
+
+## Credential Login Dummy
+<ul>
+    <li>Email : user1@gmail.com</li>
+    <li>Password : user123</li>
+</ul>
+
 
 <hr>
 
