@@ -6,7 +6,7 @@
         <h4 class="m-0 font-weight-bold text-primary"><i class="bi bi-file-earmark-plus"></i> Input Beita Baru</h4>
     </div>
     <div class="card-body text-dark">
-        <div class="col-md-8 col-sm-12 bg-white p-4">
+        <div class="col-md-12 col-sm-12 bg-white p-4">
             <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data">
                 {{csrf_field()}}
                 @csrf

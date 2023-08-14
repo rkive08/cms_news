@@ -6,7 +6,7 @@
         <h4 class="m-0 font-weight-bold text-primary">Edit Berita</h4>
     </div>
     <div class="card-body">
-        <div class="col-md-8 col-sm-12 bg-white p-4">
+        <div class="col-md-12 col-sm-12 bg-white p-4">
             <form action="{{ route('news.update', [$news->id]) }}" method="POST" enctype="multipart/form-data">
                 {{csrf_field()}}
                 @csrf
@@ -38,11 +38,11 @@
                     </div>
                     <div class="form-group">
                         <label><b>Deskripsi Singkat</b> </label>
-                        <textarea id="myeditorinstance" class="form-control" name="ringkasan" rows="8" value="{{ $news->ringkasan }}" required>{{ $news->ringkasan }}</textarea>
+                        <textarea id="myeditorinstance" class="form-control" name="ringkasan" rows="5" value="{{ $news->ringkasan }}" required>{{ $news->ringkasan }}</textarea>
                     </div>
                     <div class="form-group">
                         <label for=""><b>Deskripsi</b> </label>
-                        <textarea id="myeditorinstance" class="form-control" name="deskripsi" rows="15" value="{{ $news->deskripsi }}" required>{{ $news->deskripsi }}</textarea>
+                        <textarea id="myeditorinstance" class="form-control" name="deskripsi" rows="25" value="{{ $news->deskripsi }}" required>{{ $news->deskripsi }}</textarea>
                     </div>
 
                     <br>

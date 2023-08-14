@@ -57,48 +57,48 @@
                 <p class="blog-post-meta">{{ Carbon\Carbon::parse($news->tgl_post)->translatedFormat('j F Y') }} oleh <a href="#">{{$news->penulis}}</a></p>
                 <center>
                     <img src="{{ url('/images/'. $news->gambar) }}" width="100%">
-                </center>
-                <br>
-                <i style="font-size: 20px;">"{{$news->ringkasan}}"</i </article>
-                <br><br>
-                <div class="row g-5">
-                    <div class="col-md-8">
-                        <hr>
-                        <article class="blog-post">
-                            <p>{{$news->deskripsi}}</p>
-                        </article>
+                </center><br>
+                <i style="font-size: 20px;">{!!$news->ringkasan!!}</i>
+            </article>
 
-                    </div>
-                    <div class="col-md-4">
-                        <div class="position-sticky" style="top: 2rem;">
-                            <div class="p-4 mb-3 bg-body-tertiary rounded">
-                                <h4 class="fst-italic">About</h4>
-                                <p class="mb-0">Daftar Berita Web Developer
-                                    Ikuti berita terbaru dengan tag seputar #web developer</p>
-                            </div>
+            <div class="row g-5">
+                <div class="col-md-8">
+                    <hr>
+                    <article class="blog-post">
+                        <p>{!!$news->deskripsi!!}</p>
+                    </article>
 
-                            <div>
-                                <h4 class="fst-italic">Recent posts</h4>
-                                @foreach ($other as $oth)
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="/detail/{{ $oth->id }}">
-                                            <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                                <img src="{{ url('/images/'. $oth->gambar) }}" width="100px">
-                                            </svg>
-                                            <div class="col-lg-8">
-                                                <h6 class="mb-0">{{ $oth->judul}}</h6>
-                                                <small class="text-body-secondary">{{ Carbon\Carbon::parse($oth->tgl_post)->translatedFormat('j F Y') }}</small>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="position-sticky" style="top: 2rem;">
+                        <div class="p-4 mb-3 bg-body-tertiary rounded">
+                            <h4 class="fst-italic">About</h4>
+                            <p class="mb-0">Daftar Berita Web Developer
+                                Ikuti berita terbaru dengan tag seputar #web developer</p>
+                        </div>
 
-                                @endforeach
-                            </div>
+                        <div>
+                            <h4 class="fst-italic">Recent posts</h4>
+                            @foreach ($other as $oth)
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="/detail/{{ $oth->id }}">
+                                        <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <img src="{{ url('/images/'. $oth->gambar) }}" width="100px">
+                                        </svg>
+                                        <div class="col-lg-8">
+                                            <h6 class="mb-0">{{ $oth->judul}}</h6>
+                                            <small class="text-body-secondary">{{ Carbon\Carbon::parse($oth->tgl_post)->translatedFormat('j F Y') }}</small>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            @endforeach
                         </div>
                     </div>
                 </div>
+            </div>
 
         </main>
     </div>

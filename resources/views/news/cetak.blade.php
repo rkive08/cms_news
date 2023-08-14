@@ -7,18 +7,15 @@
     <style>
         * {
             font-family: 'Times New Roman', Times, serif;
-            margin-left: 7%;
-            margin-right: 7%;
+            margin-left: 5%;
+            margin-right: 5%;
         }
 
-        p {
-            text-align: justify;
-            padding-top: 1%;
-        }
-
+        p,
         i {
-            font-size: 13px;
+            text-align: justify;
         }
+
 
         .page-break {
             page-break-after: always;
@@ -32,15 +29,15 @@
         <p>[{{ ++$i }}]</p>
         <h3>{{ $ctk->judul}}</h3>
         <hr>
-        <i>Oleh : {{$ctk->penulis}} &nbsp; | &nbsp; {{ Carbon\Carbon::parse($ctk->tgl_post)->translatedFormat('l, d F Y') }}</i>
+        <i>Oleh : {{$ctk->penulis}} &nbsp; | &nbsp; {{ Carbon\Carbon::parse($ctk->tgl_post)->translatedFormat('l, d F Y') }}</i><br><br>
         <center>
             <img src="{{ public_path('/images/') . $ctk->gambar }}" width="100%" height="30%">
         </center>
-        <i>Kategori : {{$ctk->kategori}}</i><br>
-        <i>
-            <h6 style="text-align: justify;">"{{$ctk->ringkasan}}"</h6>
-        </i>
-        <p>{{ $ctk->deskripsi}}</p>
+        <i>Kategori : {{$ctk->kategori}}</i>
+        <hr>
+        <p><i>{!!$ctk->ringkasan!!}</i></p>
+        <hr>
+        <p>{!!$ctk->deskripsi!!}</p>
     </div>
     <div class="page-break">
     </div>

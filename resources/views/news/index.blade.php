@@ -33,7 +33,7 @@
                         <td><img src="{{ url('/images/'. $new->gambar) }}" width="100px"></td>
                         <td>{{ $new->judul }}</td>
                         <td>{{ $new->kategori}}</td>
-                        <td>{{ $new->ringkasan}}</td>
+                        <td>{!! $new->ringkasan !!}</td>
                         <td>{{ $new->penulis}}</td>
                         <td> {{ Carbon\Carbon::parse($new->tgl_post)->translatedFormat('j F Y') }}</td>
                         <td><a href="/detail/{{ $new->id }}" class="d-none d-sm-inline-block btn-sm btn-outline-primary shadow-sm">

@@ -25,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="blog.css" rel="stylesheet">
+    <x-head.tinymce-config />
 </head>
 
 <body>
@@ -60,7 +61,7 @@
         <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
             <div class="col-lg-6 px-0">
                 <h1 class="display-4 fst-italic">{{$ban->judul}}</h1>
-                <p class="lead my-3">{{$ban->ringkasan}}</p>
+                <p class="lead my-3">{!!$ban->ringkasan!!}</p>
                 <p class="lead mb-0"><a href="/detail/{{ $ban->id }}" class="text-body-emphasis fw-bold">Continue reading...</a></p>
             </div>
         </div>
@@ -74,7 +75,7 @@
                         <strong class="d-inline-block mb-2 text-success-emphasis">{{$lain->kategori}}</strong>
                         <h3 class="mb-0">{{$lain->judul}}</h3>
                         <div class="mb-1 text-body-secondary">{{ Carbon\Carbon::parse($lain->tgl_post)->translatedFormat('j F Y') }}</div>
-                        <p class="mb-auto">{{$lain->ringkasan}}</p>
+                        <p class="mb-auto">{!! $lain->ringkasan !!}</p>
                         <a href="/detail/{{ $lain->id }}" class="icon-link gap-1 icon-link-hover stretched-link">
                             Continue reading
                             <svg class="bi">
@@ -102,7 +103,7 @@
                                 <strong class="d-inline-block mb-2 text-success-emphasis">{{$lain2->kategori}}</strong>
                                 <h3 class="mb-0">{{$lain2->judul}}</h3>
                                 <div class="mb-1 text-body-secondary">{{ Carbon\Carbon::parse($lain2->tgl_post)->translatedFormat('j F Y') }}</div>
-                                <p class="mb-auto">{{$lain2->ringkasan}}</p>
+                                <p class="mb-auto">{!!$lain2->ringkasan!!}</p>
                                 <a href="/detail/{{ $lain2->id }}" class="icon-link gap-1 icon-link-hover stretched-link">
                                     Continue reading
                                     <svg class="bi">
