@@ -52,7 +52,7 @@
 </svg>
     </clipboard-copy>
   </div></div></li>
-    <li>Jalankan perintah npm isntall untuk menginstak semua dependensi JavaScript: <br><br><div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>npm isntall
+    <li>Jalankan perintah npm isntall untuk menginstak semua dependensi JavaScript: <br><br><div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>npm install
 </code></pre><div class="zeroclipboard-container position-absolute right-0 top-0">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/bbhpowpow/myname.git" tabindex="0" role="button" style="display: inherit;">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
